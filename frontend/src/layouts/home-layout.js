@@ -20,23 +20,23 @@ export default function HomeLayout() {
 									background: 'white',
 									padding: '5px 0 5px 5px',
 									fontSize: '20px',
+									
 							}}>
 									<div style={{ margin: '10px' }}>
 											<NavLink to="/" style={({ isActive }) => ({ 
-													color: isActive ? 'midnightblue' : 'grey' })}>
-													<Tab label="Over ons" />	
-													
+													color: isActive ? 'midnightblue' : 'grey', textDecoration: 'none'})}>
+													<Tab style={{fontWeight: 'bold'}} label="Over ons" />	
 											</NavLink>
 									</div>
 									<div style={{ margin: '10px' }}>
 											<NavLink to="/informatie" style={({ isActive }) => ({ 
-													color: isActive ? 'midnightblue' : 'grey' })}>
+													color: isActive ? 'midnightblue' : 'grey' , textDecoration: 'none'})}>
 													<Tab label="Informatie" />		
 											</NavLink>
 									</div>
 									<div style={{ margin: '10px' }}>
 											<NavLink to="/symptomatrix" style={({ isActive }) => ({ 
-													color: isActive ? 'midnightblue' : 'grey' })}>
+													color: isActive ? 'midnightblue' : 'grey' , textDecoration: 'none'})}>
 													<Tab label="SymptoMatrix" />											
 											</NavLink>
 									</div>
