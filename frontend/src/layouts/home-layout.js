@@ -1,6 +1,5 @@
 
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
