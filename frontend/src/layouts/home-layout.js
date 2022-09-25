@@ -10,6 +10,7 @@ import LeerMeerPage from '../pages/leer-meer-page';
 import HelpMeePage from '../pages/help-mee-page';
 import DoneerPage from '../pages/doneer-page';
 import DeelPage from '../pages/deel-page';
+import logo from './logo.png';
 
 export default function HomeLayout() {
 
@@ -25,6 +26,7 @@ export default function HomeLayout() {
 									fontSize: '20px',
 									
 							}}>
+								<img src={logo}></img>
 									<div style={{ margin: '10px' }}>
 											<NavLink to="/" style={({ isActive }) => ({ 
 													color: isActive ? 'midnightblue' : 'grey', textDecoration: 'none'})}>
