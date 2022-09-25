@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import InformatiePage from "../pages/informatie-page";
 import OverOnsPage from "../pages/over-ons-page";
 import SymptoMatrixPage from "../pages/sympto-matrix-page";
+import LeerMeerPage from '../pages/leer-meer-page';
+import HelpMeePage from '../pages/help-mee-page';
+import DoneerPage from '../pages/doneer-page';
+import DeelPage from '../pages/deel-page';
 
 export default function HomeLayout() {
 
@@ -45,6 +49,10 @@ export default function HomeLayout() {
 							<Route exact path="/" element={<OverOnsPage />} />
 							<Route exact path="/informatie" element={< InformatiePage/>} />
 							<Route exact path="/symptomatrix" element={<SymptoMatrixPage />} />
+							<Route exact path="/leer-meer" element={<LeerMeerPage />} />
+							<Route exact path="/help-mee" element={<HelpMeePage />} />
+							<Route exact path="/deel" element={<DeelPage />} />
+							<Route exact path="/doneer" element={<DoneerPage />} />
 					</Routes>
 				</BrowserRouter>
 );

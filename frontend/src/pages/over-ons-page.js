@@ -8,16 +8,68 @@ import Typography from '@mui/material/Typography';
 import over from './overons.png';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 
-const card = (
+const cardLeerMeer = (
   <React.Fragment>
 		<CardActions>
-      <Button size="large">Leer meer</Button>
+		<NavLink to="/leer-meer">
+			<Button size="large">Leer meer</Button>
+		</NavLink>
+      
     </CardActions>
     <CardContent>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         Kom erachter hoe wij helpen bij vroegherkeninng van zeldzame vormen van Reuma
+      </Typography>
+    </CardContent>
+    
+  </React.Fragment>
+);
+
+const cardHelpMee = (
+  <React.Fragment>
+		<CardActions>
+			<NavLink to="/help-mee">
+      	<Button size="large">Help mee</Button>
+			</NavLink>
+    </CardActions>
+    <CardContent>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Ontdek hoe jij kan helpen
+      </Typography>
+    </CardContent>
+    
+  </React.Fragment>
+);
+
+const cardDeel = (
+  <React.Fragment>
+		<CardActions>
+			<NavLink to="/deel">
+      	<Button size="large">Deel</Button>
+			</NavLink>
+    </CardActions>
+    <CardContent>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Deel onze info op je sociale netwerk(en) om awareness te creeren
+      </Typography>
+    </CardContent>
+    
+  </React.Fragment>
+);
+
+const cardDoneer = (
+  <React.Fragment>
+		<CardActions>
+			<NavLink to="/doneer">
+      	<Button size="large">Doneer</Button>
+			</NavLink>
+    </CardActions>
+    <CardContent>
+      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        Doneer en help ons het verschil te maken
       </Typography>
     </CardContent>
     
@@ -33,63 +85,64 @@ export default function OverOnsPage(){
 			<img src={over}></img>
 			<Box sx={{ minWidth: 275 }}>
     	</Box>
-			<Box style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>
-
-			<TableRow >
-				<TableCell style={{display: 'inline-block', width: 'auto'}}>
-					<Box sx={{
-							width: 270,
-							height: 150,
-							backgroundColor: 'primary',
-							'&:hover': {
-								backgroundColor: 'primary',
-								opacity: [0.9, 0.8, 0.7],
-							},
-						}} >
-						{card}
-					</Box>
-				</TableCell>
-				<TableCell style={{display: 'inline-block', width: 'auto'}}>
-					<Box sx={{
-							width: 270,
-							height: 150,
-							backgroundColor: 'primary',
-							'&:hover': {
-								backgroundColor: 'primary',
-								opacity: [0.9, 0.8, 0.7],
-							},
-						}} >
-						{card}
-					</Box>
-				</TableCell>
-				<TableCell style={{display: 'inline-block', width: 'auto'}}>
-					<Box sx={{
-							width: 270,
-							height: 150,
-							backgroundColor: 'primary',
-							'&:hover': {
-								backgroundColor: 'primary',
-								opacity: [0.9, 0.8, 0.7],
-							},
-						}} >
-						{card}
-					</Box>
-				</TableCell>
-				<TableCell style={{display: 'inline-block', width: 'auto'}}>
-					<Box sx={{
-							width: 270,
-							height: 150,
-							backgroundColor: 'primary',
-							'&:hover': {
-								backgroundColor: 'primary',
-								opacity: [0.9, 0.8, 0.7],
-							},
-						}} >
-						{card}
-					</Box>
-				</TableCell>
-			</TableRow>
-			</Box>
+				<Box style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>
+					<TableRow >
+						<TableCell style={{display: 'inline-block', width: 'auto'}}>
+							<Box sx={{
+									width: 270,
+									height: 150,
+									backgroundColor: 'primary',
+									'&:hover': {
+										backgroundColor: 'primary',
+										opacity: [0.9, 0.8, 0.7],
+									},
+								}} >
+								
+									{cardLeerMeer}
+								
+							</Box>
+						</TableCell>
+						<TableCell style={{display: 'inline-block', width: 'auto'}}>
+							<Box sx={{
+									width: 270,
+									height: 150,
+									backgroundColor: 'primary',
+									'&:hover': {
+										backgroundColor: 'primary',
+										opacity: [0.9, 0.8, 0.7],
+									},
+								}} >
+								{cardHelpMee}
+							</Box>
+						</TableCell>
+						<TableCell style={{display: 'inline-block', width: 'auto'}}>
+							<Box sx={{
+									width: 270,
+									height: 150,
+									backgroundColor: 'primary',
+									'&:hover': {
+										backgroundColor: 'primary',
+										opacity: [0.9, 0.8, 0.7],
+									},
+								}} >
+								{cardDeel}
+							</Box>
+						</TableCell>
+						<TableCell style={{display: 'inline-block', width: 'auto'}}>
+							<Box sx={{
+									width: 270,
+									height: 150,
+									backgroundColor: 'primary',
+									'&:hover': {
+										backgroundColor: 'primary',
+										opacity: [0.9, 0.8, 0.7],
+									},
+								}} >
+								{cardLeerMeer}
+							</Box>
+						</TableCell>
+					</TableRow>
+				</Box>
     </div>
 	);
 }
