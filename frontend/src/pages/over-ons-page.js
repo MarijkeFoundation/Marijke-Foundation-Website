@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import over from './overons.png';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
+import TextField from '@mui/material/TextField';
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 
@@ -83,8 +84,6 @@ export default function OverOnsPage(){
 	return (
 		<div >
 			<img src={over}></img>
-			<Box sx={{ minWidth: 275 }}>
-    	</Box>
 				<Box style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}}>
 					<TableRow >
 						<TableCell style={{display: 'inline-block', width: 'auto'}}>
@@ -97,9 +96,7 @@ export default function OverOnsPage(){
 										opacity: [0.9, 0.8, 0.7],
 									},
 								}} >
-								
-									{cardLeerMeer}
-								
+									{cardLeerMeer}								
 							</Box>
 						</TableCell>
 						<TableCell style={{display: 'inline-block', width: 'auto'}}>
@@ -142,7 +139,17 @@ export default function OverOnsPage(){
 							</Box>
 						</TableCell>
 					</TableRow>
+					
 				</Box>
+				<Box sx={{
+								width: 'auto',
+								height: 200,
+								backgroundColor: '#8caffbb8'
+							}}>
+								<h2><b>Abonneer op onze niewsbrief en blijf op de hoogte van ons werk</b></h2>
+								<TextField sx={{marginLeft:'50px', background:'white'}} id="outlined-basic" variant='outlined'/>
+									<Button sx={{marginLeft:'50px'}} variant="contained">Abonneer</Button>
+							</Box>
     </div>
 	);
 }

@@ -46,7 +46,9 @@ export default function HomeLayout() {
 											</NavLink>
 									</div>
 							</div>
-					</Box>					
+							
+					</Box>	
+									
 					<Routes>
 							<Route exact path="/" element={<OverOnsPage />} />
 							<Route exact path="/informatie" element={< InformatiePage/>} />
