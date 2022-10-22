@@ -12,7 +12,7 @@ import DoneerPage from '../pages/doneer-page';
 import DeelPage from '../pages/deel-page';
 import logo from './logo.png';
 
-export default function HomeLayout() {
+export default function App() {
 
 	return (
 		
