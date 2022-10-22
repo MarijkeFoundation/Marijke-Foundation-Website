@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  mariadb:
+    image: mariadb:10.2
+    environment:
+      MYSQL_ROOT_PASSWORD: changeit
+      MYSQL_DATABASE: marijke
+      MYSQL_USER: maria
+      MYSQL_PASSWORD: dbpass
+    logging:
+      driver: syslog
+      options:
+        tag: "{{.DaemonName}}(image={{.ImageName}};name={{.Name}};id={{.ID}})"
+#    networks:
+#      - backend
+    restart: on-failure
+#    volumes:
+#      - ${PWD}/mariadb:/var/lib/mysql
